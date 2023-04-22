@@ -4,7 +4,7 @@ def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch()
     page = browser.new_page()
 
-    page.goto('https://www.example.com')
+    page.goto('https://www.youtube.com/')
     title = page.title()
     print(title)
 
@@ -12,6 +12,4 @@ def run(playwright: Playwright) -> None:
 
 with sync_playwright() as playwright:
     run(playwright)
-
-
 
